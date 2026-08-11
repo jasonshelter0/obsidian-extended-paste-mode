@@ -19,6 +19,33 @@ An [Obsidian](https://obsidian.md/) plugin to paste and manage text, including b
 
 ---
 
+### Installation
+
+#### Via BRAT (recommended)
+
+This plugin is not in the Obsidian community plugin store, but you can install and auto-update it using the [BRAT](https://github.com/TfTHacker/obsidian42-brat) (Beta Reviewers Auto-update Tester) plugin:
+
+1. Install **BRAT** from the Obsidian community plugin store and enable it.
+2. Open the Command Palette (`Ctrl/Cmd + P`) and run **`BRAT: Add a beta plugin for testing`**.
+3. Paste the repository URL:  
+   `https://github.com/jasonshelter0/obsidian-extended-paste-mode`
+4. BRAT will download `main.js`, `manifest.json`, and `styles.css` into your vault's `.obsidian/plugins/obsidian-extended-paste-mode/` folder.
+5. Go to **Settings → Community plugins**, find **Extended Paste Mode**, and enable it.
+
+BRAT will check for updates automatically whenever you restart Obsidian.
+
+#### Via GitHub Release
+
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/jasonshelter0/obsidian-extended-paste-mode/releases).
+2. Create a folder in your vault: `.obsidian/plugins/obsidian-extended-paste-mode/`
+3. Place the three files inside that folder.
+4. Restart Obsidian (or reload plugins via the Command Palette).
+5. Go to **Settings → Community plugins**, find **Extended Paste Mode**, and enable it.
+
+To update later, repeat the steps above with the new release files.
+
+---
+
 ### Paste modes
 
 Paste Mode takes over paste functionality within Obsidian. It has seven paste modes, which determine what happens when pasting text within a file. **All modes honor the cursor's current indentation when pasting, except "Passthrough" mode, which uses Obsidian's default paste behavior.**
@@ -69,9 +96,11 @@ npm run build  # production build
 
 ### Releasing
 
-1. Update `manifest.json` and `versions.json` with the new version.
-2. Create a GitHub release tagged with the version number (no `v` prefix).
-3. Upload `main.js`, `manifest.json`, `styles.css` as binary attachments.
+1. Update `manifest.json` and `versions.json` with the new version number.
+2. Run `npm run build` to produce `main.js`.
+3. Create a new [GitHub release](https://github.com/jasonshelter0/obsidian-extended-paste-mode/releases) with the version number as the tag (e.g., `1.0.0`).
+4. Upload `main.js`, `manifest.json`, and `styles.css` as binary attachments to the release.
+5. Publish. BRAT users will pick up the update on next restart.
 
 ### License
 
