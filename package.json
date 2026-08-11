@@ -1,16 +1,16 @@
 {
-  "name": "obsidian-paste-to-current-indentation",
-  "version": "5.0.2",
-  "description": "This plugin allows pasting and marking text as block-quotes at any level of indentation.",
+  "name": "obsidian-extended-paste-mode",
+  "version": "1.0.0",
+  "description": "Fork of obsidian-paste-to-current-indentation with bug fixes and optimizations.",
   "main": "main.js",
   "scripts": {
     "icons": "node createIconsDict.js",
-    "dev": "yarn icons && node esbuild.config.mjs",
-    "build": "yarn icons && node esbuild.config.mjs production"
+    "dev": "npm run icons && node esbuild.config.mjs",
+    "build": "npm run icons && node esbuild.config.mjs production"
   },
   "keywords": [],
-  "repository": "https://github.com/publicus/obsidian-paste-to-current-indentation",
-  "author": "Jacob Levernier",
+  "repository": "https://github.com/jasonshelter0/obsidian-extended-paste-mode",
+  "author": "Jason Shelter",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@types/jest": "^26.0.24",
