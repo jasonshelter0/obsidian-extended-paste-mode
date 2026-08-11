@@ -102,10 +102,15 @@ npm run build  # production build
 4. Upload `main.js`, `manifest.json`, and `styles.css` as binary attachments to the release.
 5. Publish. BRAT users will pick up the update on next restart.
 
-### License
+### License & Credits
 
-BSD 3-Clause (same as the original).
+This project is a fork of [obsidian-paste-to-current-indentation](https://github.com/jglev/obsidian-paste-to-current-indentation) by **Jacob Levernier** (<j@adunumdatum.org>), who designed and maintained the original plugin through 5 major versions. All credit for the plugin concept, feature design, and years of development belongs to him.
 
-### Original Author
+This fork is distributed under the same **BSD 3-Clause License** as the original. See [LICENSE](LICENSE) for the full text.
 
-[Jacob Levernier](https://github.com/jglev) — creator and maintainer of [obsidian-paste-to-current-indentation](https://github.com/jglev/obsidian-paste-to-current-indentation). This fork builds on their excellent work.
+```
+Copyright 2021 Jacob Levernier <j@adunumdatum.org>
+```
+```
+Modifications (2026) Jason Shelter
+```
